@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Demo">
+  <listeners>
+		<listener class-name="com.by.automate.tools.ListenersTestng" />
+	</listeners>
+  <test name="Demo Android">
+    <groups>
+        <run>
+            <include name="demo"/>
+        </run>    
+    </groups>
+    <packages>
+      <package name="com.by.automate.tests.sample.android.*"/>
+    </packages>    -->
+    <!--  <packages>
+        <package name="com.by.automate.tests.sample.web"/> 
+    </packages> -->
+  </test>
+</suite>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+	<ui-map>
+		<application-defaultPage name="homePage" />
+		<pages>
+			<!-- start a app , default page  -->
+			<page name="homePage" default-view="home">
+				<view name="home" areas="[home]" swipe="{left=[homePage:home] , right=[homePage:home]}" />
+				
+				<areas>
+					<area name="home">
+						<element name="logInButton" value="id==me.nextplus.smsfreetext.phonecalls:id/sign_in" />
+						<element name="signUpButton" value="id==me.nextplus.smsfreetext.phonecalls:id/sign_up_email" page-view="signUpPage:signUp" />
+						<element name="nextPlusTitle" value="id==me.nextplus.smsfreetext.phonecalls:id/content_title" />
+						<element name="nextPlusImg" value="id==me.nextplus.smsfreetext.phonecalls:id/gif_imageView" />
+					</area>
+				</areas>
+			</page>
+			
+			<!-- click sign up button go to sign up page  -->
+			<page name="signUpPage" default-view="signUp">
+				<view name="signUp" areas="[signUp]" />
+				<areas>
+					<area name="signUp">
+						<!-- Apple Daily -->
+						<element name="goToBack" value="xpath==//*[@class='android.widget.ImageButton']" />
+				        <element name="fistName" value="id==me.nextplus.smsfreetext.phonecalls:id/first_name"  />
+				        <element name="lastName" value="id==me.nextplus.smsfreetext.phonecalls:id/last_name" />
+				        <element name="birthdate" value="id==me.nextplus.smsfreetext.phonecalls:id/birth_date"/>
+				        <element name="list" value="id==android:id/numberpicker_input" />
+				        <element name="saveButton" value="id==android:id/button1" />
+				        <element name="gender" value="id==me.nextplus.smsfreetext.phonecalls:id/gender" />
+				        <element name="genderDropList" value="xpath==//*[@class='android.widget.TextView']" />
+				        <element name="email" value="id==me.nextplus.smsfreetext.phonecalls:id/email" />
+				        <element name="password" value="id==me.nextplus.smsfreetext.phonecalls:id/password" />
+				        <element name="termsCheckBox" value="id==me.nextplus.smsfreetext.phonecalls:id/cb_terms_of_use" />
+				     	<element name="nextButton" value="id==me.nextplus.smsfreetext.phonecalls:id/action_next" page-view="nextPage:next" />
+				     	<element name="signUpText" value="css==body>div:nth-child(1)>div:nth-child(1) #closethick" />
+					</area>
+				</areas>
+			</page>
+			
+			<!--***************************************************  -->
+			<!--************* Create/Edit/Delete story*************  -->
+			<!--***************************************************  -->
+			
+			<page name="nextPage" default-view="next">
+				<view name="next" areas="[next]" />
+				<areas>
+					<area name="next">
+						<element name="nextLog" value="id==me.nextplus.smsfreetext.phonecalls:id/invite_overlay_imageView" />
+				        <element name="descriptorText" value="id==me.nextplus.smsfreetext.phonecalls:id/invite_overlay_header"  />
+				        <element name="nextImg" value="id==me.nextplus.smsfreetext.phonecalls:id/next_invitation_Button" page-view="sharePage:share" />
+					</area>
+				</areas>
+			</page>
+			
+			<page name="sharePage" default-view="share">
+				<view name="share" areas="[share]" />
+				<areas>
+					<area name = "share">
+					    <element name="shareDescription" value="id==me.nextplus.smsfreetext.phonecalls:id/earn_textView" />
+					    <element name="tellAFriendButton" value="xpath==//*[@class='android.widget.ImageButton']" page-view="mainPage:allContacts" />
+					    <element name="searchFriendButton" value="id==me.nextplus.smsfreetext.phonecalls:id/search_button" />
+					    <element name="selectAllCheckBox" value="id==me.nextplus.smsfreetext.phonecalls:id/select_all_checkBox" />
+					    <element name="searchTextInput" value="id==me.nextplus.smsfreetext.phonecalls:id/search_src_text" />
+					    <element name="closeSearchButton" value="id==me.nextplus.smsfreetext.phonecalls:id/search_close_btn" />
+					</area>
+				</areas>
+			</page>
+			
+			<page name="mainPage" defaule-view="allContacts">
+			    <view name="allContacts" areas="[navigate]" />
+			    <view name="userGuide" areas="[navigate,presentation]" swipe="{right=[mainPage:friends]}" />
+			    <view name="settings" areas="[navigate,settings]" />
+			    <view name="addFavorites" areas="[addFavoritesHome,allContacts]" />
+			    <areas>
+			        <area name="navigate">
+			            <element name="allOptions" value="id==me.nextplus.smsfreetext.phonecalls:id/tab_imageView" />
+			        </area>
+			        
+			        <area name="presentation">
+			            <element name="settings" value="id==me.nextplus.smsfreetext.phonecalls:id/more_settings" page-view="mainPage:settings" />
+			        </area>
+			        
+			        <area name="settings">
+			            <element name="signOutButton" value="id==me.nextplus.smsfreetext.phonecalls:id/settings_log_out" />
+			            <element name="signOutOkButton" value="id==android:id/button1" page-view="homePage:home" />
+			        </area>
+			        
+			        <area name="addFavoritesHome">
+			            <element name="addFavoritesText" value="xpath==//*[@text='Add Favorites']" />
+			            <element name="addAFavoriteButton" value="id==me.nextplus.smsfreetext.phonecalls:id/select_favorites" />
+			            <element name="addFavroiteImage" value="id==me.nextplus.smsfreetext.phonecalls:id/home_floating_action_button" />
+			        </area>
+			        
+			        <area name="allContacts">
+			            <element name="allConacts" value="id==me.nextplus.smsfreetext.phonecalls:id/button_filter_all" />
+			            <element name="nextPlus" value="id==me.nextplus.smsfreetext.phonecalls:id/button_filter_nextplus" />
+			        	<element name="allUser" value="id==me.nextplus.smsfreetext.phonecalls:id/contact_method_textView" />
+			        	<element name="allfav" value="me.nextplus.smsfreetext.phonecalls:id/contact_method_fav"/>
+			        	<element name="allname" value="me.nextplus.smsfreetext.phonecalls:id/contactName"/>
+			        </area>
+			    </areas>
+			</page>
+			
+			<page name="organizationPage" default-view="organization">
+			    <view name="organization" areas="[content]" />
+				<areas>
+					<area name="content">
+					    <element name="organizationTitle" value="css==.header-title>span" />
+						<element name="organizationResult" value="css==.aui-searchcontainer tr" />
+						<element name="organizationResultName" value="css==.aui-searchcontainer tr td:nth-child(1)" page-view="controlPanel:usersAndOrganizations" />
+					</area>
+				</areas>
+			</page>
+			
+			<page name="myAccountPage" default-view="userHomePage">
+			    <view name="userHomePage" areas="[content]" />
+				<areas>
+					<area name="content">
+					    <element name="myAccountFrame" value="css==.aui-resizeiframe-monitored-height" />
+						<element name="myAccountTitle" value="css==#cpPortletTitle>span" />
+						<element name="closeMyAccontButton" value="css==.yui3-dd-draggable.aui-resize #closethick" page-view="dashboardPage:createStory" />
+					</area>
+				</areas>
+			</page>
+			
+						
+			<page name="endPlayHelpPage" default-view="helpHome">
+				<view name="helpHome" areas="[helpHead]" />
+				<areas>
+					<area name="helpHead">
+						<element name="helpLogo" value="css==#logo" />
+					</area>
+				</areas>
+			</page>
+			
+			<page name="greenPage" default-view="green">
+				<view name="green" areas="[head]" />
+				<areas>
+					<area name="head">
+						<element name="greenLog" value="css==#header" />
+					</area>
+				</areas>
+			</page>
+		</pages>
+	</ui-map>
+	<validation>
+
+	</validation>
+</test-data>

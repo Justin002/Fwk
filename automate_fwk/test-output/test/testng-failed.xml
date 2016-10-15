@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [test]">
+  <test name="Demo WebApp(failed)">
+    <groups>
+      <run>
+        <include name="demo2"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.by.automate.tests.sample.web.Test_envierment">
+        <methods>
+          <include name="Test010"/>
+        </methods>
+      </class> <!-- com.by.automate.tests.sample.web.Test_envierment -->
+    </classes>
+  </test> <!-- Demo WebApp(failed) -->
+</suite> <!-- Failed suite [test] -->

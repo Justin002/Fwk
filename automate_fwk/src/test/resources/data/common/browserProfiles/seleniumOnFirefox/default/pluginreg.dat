@@ -1,0 +1,235 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version|0.17|$
+Arch|x86-msvc|$
+
+[PLUGINS]
+npjp2.dll|$
+D:\jdk_32\bin\plugin2\npjp2.dll|$
+11.25.2.18|$
+1453107500506|0|0|0|$
+Next Generation Java Plug-in 11.25.2 for Mozilla browsers|$
+Java(TM) Platform SE 8 U25|$
+38
+0|application/x-java-applet|Java Applet||$
+1|application/x-java-bean|JavaBeans||$
+2|application/x-java-vm|||$
+3|application/x-java-applet;version=1.1.1|||$
+4|application/x-java-bean;version=1.1.1|||$
+5|application/x-java-applet;version=1.1|||$
+6|application/x-java-bean;version=1.1|||$
+7|application/x-java-applet;version=1.2|||$
+8|application/x-java-bean;version=1.2|||$
+9|application/x-java-applet;version=1.1.3|||$
+10|application/x-java-bean;version=1.1.3|||$
+11|application/x-java-applet;version=1.1.2|||$
+12|application/x-java-bean;version=1.1.2|||$
+13|application/x-java-applet;version=1.3|||$
+14|application/x-java-bean;version=1.3|||$
+15|application/x-java-applet;version=1.2.2|||$
+16|application/x-java-bean;version=1.2.2|||$
+17|application/x-java-applet;version=1.2.1|||$
+18|application/x-java-bean;version=1.2.1|||$
+19|application/x-java-applet;version=1.3.1|||$
+20|application/x-java-bean;version=1.3.1|||$
+21|application/x-java-applet;version=1.4|||$
+22|application/x-java-bean;version=1.4|||$
+23|application/x-java-applet;version=1.4.1|||$
+24|application/x-java-bean;version=1.4.1|||$
+25|application/x-java-applet;version=1.4.2|||$
+26|application/x-java-bean;version=1.4.2|||$
+27|application/x-java-applet;version=1.5|||$
+28|application/x-java-bean;version=1.5|||$
+29|application/x-java-applet;version=1.6|||$
+30|application/x-java-bean;version=1.6|||$
+31|application/x-java-applet;version=1.7|||$
+32|application/x-java-bean;version=1.7|||$
+33|application/x-java-applet;jpi-version=1.8.0_25|||$
+34|application/x-java-bean;jpi-version=1.8.0_25|||$
+35|application/x-java-vm-npruntime|||$
+36|application/x-java-applet;deploy=11.25.2|||$
+37|application/x-java-applet;javafx=8.0.25|||$
+npdeployJava1.dll|$
+D:\jdk_32\bin\dtplugin\npdeployJava1.dll|$
+11.25.2.18|$
+1453107500290|0|0|0|$
+NPRuntime Script Plug-in Library for Java(TM) Deploy|$
+Java Deployment Toolkit 8.0.250.18|$
+1
+0|application/java-deployment-toolkit|||$
+NPSWF32_20_0_0_267.dll|$
+C:\Windows\SysWOW64\Macromed\Flash\NPSWF32_20_0_0_267.dll|$
+20.0.0.267|$
+1451959224008|0|0|0|$
+Shockwave Flash 20.0 r0|$
+Shockwave Flash|$
+2
+0|application/x-shockwave-flash|Adobe Flash movie|swf|$
+1|application/futuresplash|FutureSplash movie|spl|$
+npGoogleUpdate3.dll|$
+C:\Users\Wendy\AppData\Local\Google\Update\1.3.29.1\npGoogleUpdate3.dll|$
+1.3.29.1|$
+1449661636989|0|0|0|$
+Google Update|$
+Google Update|$
+2
+0|application/x-vnd.google.update3webcontrol.3|||$
+1|application/x-vnd.google.oneclickctrl.9|||$
+npSSOAxCtrlForPTLogin.dll|$
+C:\Program Files (x86)\Common Files\Tencent\TXSSO\1.2.4.1\Bin\npSSOAxCtrlForPTLogin.dll|$
+1.0.1.16|$
+1448941046000|0|0|0|$
+QQ QuickLogin Helper|$
+Tencent SSO Platform|$
+1
+0|application/nptxsso|TXSSO||$
+npWebStrom.dll|$
+D:\Tools\webplayer\npWebStrom.dll|$
+5.52.831.0|$
+1440733973007|0|0|0|$
+Web player NPPlugin|$
+Baofeng StormPlayer 5|$
+2
+0|application/baofengwebplayer-plugin|nprt|rts|$
+1|x-application/baofengwebplayer-plugin|||$
+npBFWebBrowserPlugin.dll|$
+D:\Tools\npBFWebBrowserPlugin.dll|$
+5.52.831.0|$
+1440733828741|0|0|0|$
+Baofeng Web Browser plugin|$
+Baofeng StormPlayer WebBrowser Plugin|$
+2
+0|application/baofeng-webbrowser-plugin|||$
+1|application/x-baofeng-webbrowser-plugin|||$
+npactivex.dll|$
+C:\Program Files (x86)\Common Files\Tencent\Npchrome\npactivex.dll|$
+6.0.1.1|$
+1438171140547|0|0|0|$
+Tencent QQ CPHelper plugin for Chrome|$
+Tencent QQ|$
+1
+0|application/qscall-plugin|DLL|dll|$
+np360MMPlugIn.dll|$
+D:\Program Files (x86)\360Safe\mobilemgr\np360MMPlugIn.dll|$
+2.4.0.1200|$
+1433322694000|0|0|0|$
+360MMPlugin|$
+360MMPlugin|$
+1
+0|application/x360mmplugin|360MMPlugin.dll|dll|$
+npgoogletalk.dll|$
+C:\Users\Wendy\AppData\Roaming\Mozilla\plugins\npgoogletalk.dll|$
+5.41.2.0|$
+1429257352000|0|0|0|$
+Version 5.41.2.0|$
+Google Talk Plugin|$
+1
+0|application/googletalk|Google voice and video chat|googletalk|$
+npo1d.dll|$
+C:\Users\Wendy\AppData\Roaming\Mozilla\plugins\npo1d.dll|$
+5.41.2.0|$
+1429257352000|0|0|0|$
+Version 5.41.2.0|$
+Google Talk Plugin Video Renderer|$
+1
+0|application/o1d|Google Talk Plugin Video Renderer|o1d|$
+npqqwebgame.dll|$
+C:\Users\Wendy\AppData\Roaming\Tencent\WebGamePlugin\1.0.3.9\npqqwebgame.dll|$
+1.0.3.9|$
+1422944076000|0|0|0|$
+QQWebGamePlugin Pro|$
+QQGamePlugin Pro|$
+1
+0|application/npqqwebgame|QQWebGamePlugin Pro|rts|$
+npitunes.dll|$
+C:\Program Files (x86)\iTunes\Mozilla Plugins\npitunes.dll|$
+1.0.1.1|$
+1414645260000|0|0|0|$
+iTunes Detector Plug-in|$
+iTunes Application Detector|$
+1
+0|application/itunes-plugin|This plug-in detects the presence of iTunes when opening iTunes Store URLs in a web page with Firefox.||$
+npIntelWebAPIIPT.dll|$
+C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT\npIntelWebAPIIPT.dll|$
+4.0.56.0|$
+1412905032000|0|0|0|$
+Intel web components for Intel® Identity Protection Technology|$
+Intel® Identity Protection Technology|$
+1
+0|application/x-vnd-intel-webapi-ipt-4.0.56|npIntelWebAPIipt-3-5||$
+npIntelWebAPIUpdater.dll|$
+C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT\npIntelWebAPIUpdater.dll|$
+4.0.56.0|$
+1412905032000|0|0|0|$
+Intel web components updater - Installs and updates the Intel web components|$
+Intel® Identity Protection Technology|$
+1
+0|application/x-vnd-intel-webapi-updater|npIntelWebAPIupdater-2-0|intel_webapi_updater-2-0|$
+npQzoneMusic.dll|$
+C:\Program Files (x86)\Tencent\QzoneMusic\npQzoneMusic.dll|$
+9.51.3079.830|$
+1409378120000|0|0|0|$
+QQMusic|$
+QQMusic|$
+1
+0|application/tecent-qzonemusic-plugin|This plug-in is transfers of QzoneMusic when opening Qzone in a web page with Firefox.|rts|$
+npQQPhoneManagerExt.dll|$
+C:\Program Files (x86)\Common Files\Tencent\QQPhoneManager\2.0.201.3192\npQQPhoneManagerExt.dll|$
+2.0.201.3198|$
+1401444304000|0|0|0|$
+QQPhoneManager Onekey-Install plug-in for Android Phones|$
+应用宝一键安装插件|$
+1
+0|application/qqphonemanagerplugin|QQPhoneManager|dll|$
+npaxlogin.dll|$
+D:\Program Files (x86)\360Safe\Utils\npaxlogin.dll|$
+1.0.0.1007|$
+1398162484000|0|0|0|$
+360安全卫士 快速登录|$
+360安全卫士 快速登录|$
+1
+0|application/mozilla-npqihooquicklogin|||$
+npQQPhotoDrawEx.dll|$
+C:\Program Files (x86)\Tencent\Qzone\npQQPhotoDrawEx.dll|$
+2.47.312.813|$
+1376385610000|0|0|0|$
+npQQPhotoDrawEx Module|$
+npQQPhotoDrawEx|$
+1
+0|application/tencent-qqphotodrawex2-plugin||rts|$
+npQQMailWebKit.dll|$
+C:\Program Files (x86)\QQMailPlugin\npQQMailWebKit.dll|$
+1.0.0.22|$
+1366877940000|0|0|0|$
+QQMail plugin for WebKit #1.0.0.22|$
+QQMail Plugin|$
+2
+0|application/x-tencent-qmail-webkit|QQMailPlugin for webkit||$
+1|application/x-tencent-qmail|QQMailPlugin for webkit||$
+nptxftnWebKit.dll|$
+C:\Program Files (x86)\QQMailPlugin\nptxftnWebKit.dll|$
+1.0.0.4|$
+1365408134000|0|0|0|$
+Tencent FTN plug-in|$
+Tencent FTN plug-in|$
+1
+0|application/txftn-webkit|nptxftn||$
+NPSPWRAP.DLL|$
+C:\PROGRA~2\MICROS~1\Office14\NPSPWRAP.DLL|$
+14.0.4761.1000|$
+1269433358000|0|0|0|$
+The plug-in allows you to open and edit files using Microsoft Office applications|$
+Microsoft Office 2010|$
+1
+0|application/x-sharepoint|SharePoint Plug-in for Firefox||$
+NPAUTHZ.DLL|$
+C:\PROGRA~2\MICROS~1\Office14\NPAUTHZ.DLL|$
+14.0.4730.1010|$
+1263044538000|0|0|0|$
+Office Authorization plug-in for NPAPI browsers|$
+Microsoft Office 2010|$
+1
+0|application/x-msoffice14|14.0.4730.1010|*|$
+
+[INVALID]

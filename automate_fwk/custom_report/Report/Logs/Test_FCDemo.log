@@ -1,0 +1,34 @@
+23:51:50.388 INFO - >=================================================================<
+23:51:50.389 INFO - Now Starting: com.by.automate.tests.ep2p.android.Test_FCDemo
+23:51:50.389 INFO - Description   : 一生财富
+23:51:50.389 INFO - Test Category : Android
+23:51:50.389 INFO - App Name      : Ep2p
+23:51:50.389 INFO - Environment   : QA
+23:51:50.389 INFO - Version       : null
+23:51:50.389 INFO - Test Network  : Wifi
+23:51:50.390 INFO - Launch the application 'D:\localGit\repositories\automate_fwk\src\test\resources\data\App\android_apk\ep2p_automation_release_1.1.apk'.
+23:51:57.817 INFO - 在page name 'homePage' -  view　'default' 下找不到 area 'E2PE' 節點, 嘗試到commonAreas查找.
+23:51:57.920 INFO - Looking for '首页'.
+23:52:00.138 INFO - Looking for '发现'.
+23:52:00.309 INFO - Looking for '我的'.
+23:52:02.591 INFO - Clicking on '发现'.
+23:52:02.982 INFO - Setting view to '发现:发现'.
+23:52:02.985 INFO - 在page name '发现' -  view　'发现' 下找不到 area 'E2PE' 節點, 嘗試到commonAreas查找.
+23:52:02.985 INFO - Looking for '领取红包'.
+23:52:04.475 INFO - Looking for '领取加息券'.
+23:52:04.568 INFO - Looking for '小e社区'.
+23:52:04.829 INFO - Looking for '投资排行'.
+23:52:05.087 INFO - Looking for '收益计算'.
+23:52:05.262 INFO - Looking for '新手指引'.
+23:52:07.375 INFO - Clicking on '我的'.
+23:52:07.762 INFO - Setting view to '我的:我的'.
+23:52:07.763 INFO - 在page name '我的' -  view　'我的' 下找不到 area 'E2PE' 節點, 嘗試到commonAreas查找.
+23:52:07.763 INFO - Looking for '立即登陆'.
+23:52:09.246 INFO - Looking for '已投项目'.
+23:52:09.436 INFO - Looking for '代收查询'.
+23:52:09.592 INFO - Looking for '还款'.
+23:52:09.772 INFO - Looking for '交易记录'.
+23:52:09.846 INFO - Looking for '自动投标'.
+23:52:09.929 INFO - Looking for '安全中心'.
+23:52:10.123 INFO - Looking for '邀请有奖'.
+23:52:10.396 INFO - Looking for '更多'.

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Demo]">
+  <test name="Demo Android(failed)">
+    <groups>
+      <run>
+        <include name="SmokeTesting"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.by.automate.tests.internCat.web.Test_FCVerifyLoginPage">
+        <methods>
+          <include name="Test020IsFailed"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.by.automate.tests.internCat.web.Test_FCVerifyLoginPage -->
+    </classes>
+  </test> <!-- Demo Android(failed) -->
+</suite> <!-- Failed suite [Demo] -->

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+		<UiMap>
+			<pages>
+				<!-- start a app , default page  -->
+				<page name="SharePage" defaultView="allThreeApp" description = "選擇分享三方應用" >
+					<view name="allThreeApp" areas="[allThreeApp]" />
+					<view name="FBView"      areas="[FBPreview]" />
+					<view name="TwitterView" areas="[TwitterView]" />
+					<areas>
+						<allThreeApp description="">
+							<element name="shareToText"   type="id"       value="android:id/alertTitle" />
+							<element name="near"          type="name"     value="分享给附近的人" />
+							<element name="copy"          type="name"     value="复制到剪贴板" />
+							<element name="huanliao"      type="name"     value="环聊" />
+							<element name="bluetooth"     type="name"     value="蓝牙" />
+							<element name="privateLetter" type="name"     value="私信" />
+							<element name="inkPresenter"  type="name"     value="涂鸦板" />
+							<element name="twitter"       type="name"     value="推文" />
+							<element name="microblog"     type="name"     value="微博" />
+							<element name="message"       type="name"     value="信息" />
+							<element name="email"         type="name"     value="邮件" />
+							<element name="cloudHardDisk" type="name"     value="云端硬盘" />
+							<element name="facebook"      type="name"     value="Facebook"  view="SharePage:FBView"/>
+							<element name="gmail"         type="name"     value="Gmail" />
+							<element name="google"        type="name"     value="Google+" />
+							<element name="whatsApp"      type="name"     value="WhatsApp" />
+						</allThreeApp>
+						
+						<FBPreview description="Fb 生成預覽頁面">
+						    <element name="fbShareToFBText"     type="id"   value="com.facebook.katana:id/title_text" />
+						    <element name="fbPublishButton"     type="id"   value="com.facebook.katana:id/composer_primary_named_button" view="homePage:articleDetails" />
+						    <element name="fbContent"           type="id"   value="com.facebook.katana:id/status_text" />
+						    <element name="fbAttachmentPhoto"   type="id"   value="com.facebook.katana:id/link_attachment_small_photo" />
+						    <element name="fbAttachmentTitle"   type="id"   value="com.facebook.katana:id/link_attachment_title_text" />
+						</FBPreview>
+						
+						<TwitterView description="Twitter 生成預覽頁面">
+						    <element name="upButton"         value="id==com.twitter.android:id/up_button" />
+						    <element name="tweetText"        value="id==com.twitter.android:id/tweet_text" />
+						    <element name="composer"         value="id==com.twitter.android:id/composer_post" />
+						</TwitterView>
+					</areas>
+				</page>
+			
+				<page name="FBPage" defaultView="dashBoard" description = "個人主頁" >
+					<view name="dashBoard" areas="[home]" />
+					<areas>
+						<home description="個人主頁信息">
+						    <element name="primaryButton"   type="id"        value="com.facebook.katana:id/primary_action_button" />
+					        <element name="attachmentTitle" type="id"        value="com.facebook.katana:id/link_attachment_title_text" />
+							<element name="storyMessage"    type="id"		 value="com.facebook.katana:id/feed_story_message" />
+							<element name="photo"           type="id"		 value="com.facebook.katana:id/link_attachment_large_photo" />
+							<element name="sideImage"       type="id" 		 value ="com.facebook.katana:id/link_attachment_side_image" />
+							<element name="smallPhoto"      type="id"		 value="com.facebook.katana:id/link_attachment_small_photo" />
+							<element name="user"            type="id"		 value="com.facebook.katana:id/header_view_title" />
+							<element name="refresh"         type="id" 		 value="com.facebook.katana:id/pull_to_refresh_spinner" />
+							<element name="bookMarks"       type="id" 		 value="com.facebook.katana:id/bookmarks_tab" />
+							<element name="homePage"      	type="id"  		 value="(//android.widget.FrameLayout)[9]" />
+							<element name="posts"         	type="id"  		 value="//*[@text='帖子']" />
+							<element name="shareOnFB"     	type="id" 		 value="com.facebook.katana:id/feed_feedback_share_container" />
+							<element name="InstagramText" 	type="id"  		 value="//*[@content-desc='Instagram']" />
+							<element name="newsFeed"     	type="id" 		 value="com.facebook.katana:id/news_feed_tab" />
+							<element name="textTitle"       type="id" 		 value="com.facebook.katana:id/text_title" />
+							<element name="newCarTestLink"  type="id" 		 value="//*[@content-desc='新車測試 Link']" />
+							<element name="healthLink"      type="id"		 value="//*[@content-desc='醫療直擊 Link']" />
+							<element name="HKFI"            type="id"		 value="//*[@content-desc='HKFI 投保懶人包 Link']" />
+							<element name="yqbl"            type="id" 		 value="//*[@content-desc='姊妹愛美麗 Link']" />
+			 			</home>
+			 	 </areas>
+			 </page>
+				
+			 <page name="browserPage" defaultView="browser" description="">
+			    <view name="browser" areas="[browser]" />
+			    <areas>
+			        <browser description="browser">
+			             <element name="browsers"     value="id==android:id/text1" />
+			             <element name="currentURl" value="id==com.htc.sense.browser:id/title" />
+						 <element name="onceButton"   value="id==android:id/button_once" />
+						 <element name="browserTitle" value="id==com.htc.sense.browser:id/title" />
+						 <element name="bgImg"        value="xpath==//android.webkit.WebView" />
+						 <element name="more"         value="id==com.htc:id/imageButton" />
+						 <element name="share"        value="xpath==//*[@text='共享']" page-view="sharePage:shareView" />
+						 <element name="exit"         value="xpath==//*[@text='退出']" page-view="homePage:specialReport" />
+						 <element name="stopLoad"     vallue="xpath==//*[@content-desc='停止网页加载']" />
+			         </browser>
+			     </areas>
+			</page>		
+		 </pages>
+	</UiMap>
+</test-data>

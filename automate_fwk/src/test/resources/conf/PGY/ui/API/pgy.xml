@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<APIS>
+	<application>
+		<DefaultPage>首页</DefaultPage>
+			<AppName>实习猫</AppName>
+			<Version>1.3.9</Version>
+			<Environment>QA</Environment>
+			<TestCategory>Web</TestCategory>
+			<NetWork>Wifi</NetWork>
+			<Description>The Saved 实习猫  all page formation for android</Description>
+	</application>
+		
+	<api name="uploadApp" description="上传app接口">
+	    <path>/apiv1/app/upload</path>
+	    <method>post</method>
+	 
+	    <object>
+				<property name="uKey"     value="69a9877dd4055c4e105956413d83dab0" />
+				<property name="_api_key" value="2293dac62f17060366a5a5b19de225c6" />
+				<property name="file"     value="C:/Users/Wendy/Desktop/App/Demo.ipa" />
+		</object>
+	</api>
+		
+	<api name="" description="安装app接口">
+	    <path></path>
+	</api>
+		
+	<api name="" description="">
+	    <path></path>
+	</api>
+		
+	<api name="" description="">
+	    <path></path>
+	</api>
+<APIS>

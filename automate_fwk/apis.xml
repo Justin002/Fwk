@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<APIS> 
+    <Api Number="API-1"> 
+        <ApiDescription>上传App</ApiDescription>  
+        <URL>https://www.pgyer.com/apiv1/app/viewGroup</URL>  
+        <Method>POST</Method>  
+        <CheckPoint>检查上传接口, 能成功上传app到蒲公英</CheckPoint>  
+        <Status>SUCCESS</Status>  
+        <Execute>Auto</Execute>  
+        <Time>12458</Time>  
+        <Log>Test_01View</Log> 
+    </Api>  
+    <Api Number="API-1">
+        <ApiDescription>上传App</ApiDescription>
+        <URL>https://www.pgyer.com/apiv1/app/viewGroup</URL>
+        <Method>POST</Method>
+        <CheckPoint>15:51:51.719 FAILURE - Warning: message is null,please using assertions function to add comment.</CheckPoint>
+        <Status>FAILURE</Status>
+        <Execute>Auto</Execute>
+        <Time>12479</Time>
+        <Log>Test_01View</Log>
+    </Api>
+</APIS>

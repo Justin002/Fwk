@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test">
+ 
+   <test name="Demo WebApp">
+    <groups>
+        <run>
+            <include name="demo2"/>
+        </run>    
+    </groups>
+    <packages>
+      <package name="com.by.automate.tests.sample.web.*"/>
+    </packages>    -->
+    <!--  <packages>
+        <package name="com.by.automate.tests.sample.web"/> 
+    </packages> -->
+  </test>
+</suite>

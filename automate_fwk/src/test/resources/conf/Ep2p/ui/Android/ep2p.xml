@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+	<UiMap>
+		<application>
+			<DefaultPage>homePage</DefaultPage>
+				<AppName>Ep2p</AppName>
+				<Version>1.3.9</Version>
+				<Environment>QA</Environment>
+				<TestCategory>Android</TestCategory>
+				<NetWork>Wifi</NetWork>
+				<Description>一生财富</Description>
+		</application>
+		
+		<pages>
+		    
+		  	<page name="homePage" defaultView="default" description = "一生财富主页">
+		  	    <view name="default" areas="[E2PE]" />
+				
+		  	</page>
+		  	
+		    <!-- 发现頁面 -->
+			<page name="发现" defaultView="发现" description = "一生财富发现页面" >
+				<view name="发现" areas="[发现,E2PE]"/>
+				<areas>
+					<发现 description="发现页面">
+					    <element name="领取红包"      type="id"      value="com.beyondsoft.ep2p:id/e_receive_redenvelope_tv" />
+						<element name="领取加息券"    type="id"      value="com.beyondsoft.ep2p:id/e_coupon_tv" />
+						<element name="小e社区"       type="id"      value="com.beyondsoft.ep2p:id/e_community_tv" />
+						<element name="投资排行"      type="id"      value="com.beyondsoft.ep2p:id/e_investment_ranking_tv" />
+						<element name="收益计算"      type="id"      value="com.beyondsoft.ep2p:id/e_income_caculator_tv" />
+						<element name="新手指引"      type="id"      value="com.beyondsoft.ep2p:id/e_newer_novice_tv" />
+					</发现>
+				</areas>
+			</page>
+			
+			<page name="我的" defaultView="我的" description = "我的页面" >
+				<view name="我的"      areas="[我的,E2PE]"/>
+				<areas>
+					<我的 description="我的">
+						<element name="立即登陆"      type="id"      value="com.beyondsoft.ep2p:id/login_btn" />
+						<element name="已投项目"      type="id"      value="com.beyondsoft.ep2p:id/item1" />
+						<element name="代收查询"      type="id"      value="com.beyondsoft.ep2p:id/item2" />
+						<element name="还款"          type="id"      value="com.beyondsoft.ep2p:id/item4" />
+						<element name="交易记录"      type="id"      value="com.beyondsoft.ep2p:id/item5" />
+						<element name="自动投标"      type="id"      value="com.beyondsoft.ep2p:id/item6" />
+						<element name="安全中心"      type="id"      value="com.beyondsoft.ep2p:id/item8" />
+						<element name="邀请有奖"      type="id"      value="com.beyondsoft.ep2p:id/item9" />
+						<element name="更多"          type="id"      value="com.beyondsoft.ep2p:id/item7" />
+					</我的>
+					
+				</areas>
+			</page>
+			
+		
+		<commonAreas description="e2pe相同区域">
+		    <E2PE  description="底部">
+				 <element name="首页" type="id" value="com.beyondsoft.ep2p:id/home_rb" />
+				<element name="发现" type="id" value="com.beyondsoft.ep2p:id/discover_rb"  view="发现:发现" />
+				<element name="我的" type="id" value="com.beyondsoft.ep2p:id/mine_rb"  view="我的:我的"  />
+			</E2PE>
+		</commonAreas>
+			
+		</pages>
+		</UiMap>
+		</test-data>

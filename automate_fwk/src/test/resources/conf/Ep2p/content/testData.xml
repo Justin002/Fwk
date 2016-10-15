@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data-set>
+	<!-- System level property could be referred by test-data node like ${...}. 
+	     But don't use ${...} in this system-level section. Use hard-coded 
+	     value instead. -->
+	<system-level>
+		<property name="sample.var" value="sample value" />
+	</system-level>
+	
+	<!-- S1. Single Point phase I test scripts -->
+	<test-data class="SpHomePagePopupsTest" method="popupsAndFilters">
+		<property name="customerName" value="3M COMPANY"/>
+	</test-data>
+	
+	<test-data class="GISAccessProject_1_loginTest" method="rememberMeAndGoBackDirectly">
+		<property name="caseId" value="C169019"/>
+	</test-data>
+	
+	<test-data class="GisRelatedPrductsTest" method="relatedProductsTest">
+		<property name="caseId" value="C169023"/>
+	</test-data>
+	
+	<test-data class="GisBasicSearchEmailAndPrintFunctionalityTest" method="emailAndPrintFunctionality">
+		<property name="searchText" value="test"/>
+		<property name="message"   value="This mail is sent by the system automatically, please don't reply it." />
+		<property name="subject" value="Your Congressional Research"/>
+	</test-data>
+	
+	<test-data class="GisCrossSearch_MarkeHandlingTest" method="crossSearchMarkeHandling">
+		<property name="searchText" value="Business Finance"/>
+		<property name="title"   value="RECOGNIZING DAKOTA BUSINESS FINANCE" />
+	</test-data>
+	
+	<test-data class="GisCrossSearchRelatedNewsTest" method="crossSearch">
+		<property name="searchText" value="water pollution"/>
+	</test-data>
+	
+	<test-data class="GisAccessProject_1_BasicSerachTest" method="gisBaseSearchTest">
+		<property name="inputSearchDefaultText" value="Enter keywords to search within all fields including full text" />
+		<property name="dateIs"   value="Date is..." />
+		<property name="inputSearchText" value="unemployment" />
+		<property name="inputMonth" value="Jan" />
+		<property name="inputDay"   value="17" />
+		<property name="inputYear"   value="1997" />
+		<property name="caseId" value="C169020"/>
+	</test-data>
+	
+	<test-data class="GisPoliticalNews_SocialMediaTest" method="socialMediaTest">
+		<property name="enterText" value="Computer" />
+	</test-data>
+	
+	<test-data class="GisAccessProject_1_AdvancedSearchTest" method="advancedSearch">
+	<property name="firstSelectDefaultText" value="All fields except full text" />
+	<property name="secondSelectDefaultText" value="AND" />
+	<property name="defaultLimitBydate" value="Year is between" />
+	<property name="defaultLimitByCongress" value="Any Congress" />
+	<property name="searchTermInFirst" value="unemployment" />
+	<property name="searchTermInSecond" value="economy act" />
+	<property name="searchResult" value="111 Bill Profile S. 269 (2009-2010)" />
+	<property name="docTitle"
+		value="Congressional Record Bound Edition &amp; Predecessors 1789-Present" />
+	<property name="searchDropdownList" type="string-list">
+		<string value="All fields except full text" />
+		<string value="All fields including full text" />
+		<string value="Subject" />
+		<string value="Bills, Laws, and Resolution (Cong Rec Bound only)" />
+		<string value="Content Type (Cong Rec Bound Only)" />
+		<string value="Full Text by Section (Cong Rec Bound only)" />
+		<string value="Member of Congress(Cong Rec Bound and Cong Rec Daily)" />
+		<string value="Roll Call Votes (Cong Rec Bound only)" />
+		<string value="View of GPO Index Vols (Cong Rec Bound only)" />
+	</property>
+	<property name="headTitle"
+		value="Search Congressional Record Bound Edition &amp; Predecessors By:" />
+	<property name="options1"
+		value="Congressional Record Page Citation with Volume" />
+	<property name="options2"
+		value="Daily Edition to Bound Edition Cross Reference" />
+	<property name="getAttribute" value="active" />
+	<property name="textEg"
+		value="e.g. Vol. (1 III) Page Range (134, 12-38, not XIVa)" />
+	<property name="sectionType" type="string-list">
+		<string value="Proceedings and Ext. of Remarks" />
+		<string value="Daily Digest" />
+		<string value="Appendix" />
+	</property>
+	<property name="contentType" value="Content Type (Cong Rec Bound Only)" />
+	<property name="contentText" value="Alcoholics Anonymous" />
+	<property name="defaultType" value="Addresses" />
+
+	<property name="fullTextBySection" value="Full Text by Section (Cong Rec Bound only)" />
+	<property name="sectionText" value="a" />
+	<property name="defaultSectionInfo" value="Full Proceedings" />
+	</test-data>
+
+	<test-data class="GisMembersCommittes_MemberRecordsTest" method="membersRecordsSearch">
+		<property name="abrahamSpencer" value="Abraham, Spencer (R-MI) [104-106]" />
+		<property name="keyword" value="test" />
+	</test-data>
+
+	<test-data class="GisAccessProject_1_SearchByNumberTest"
+		method="searchByNumber">
+		<property name="congressByBillNumber" value="102 (1991-1992)" />
+		<property name="typeByBillNumber" value="H.J.Res." />
+		<property name="billNumber" value="271" />
+
+		<property name="congress" value="114 (2015-2016)" />
+		<property name="lawNumber" value="123" />
+		<property name="LNSearchResult" value="114" />
+		<property name="LNSearchResult2" value="123" />
+
+		<property name="volumeNumber" value="53" />
+		<property name="pgaeNumber" value="1" />
+		<property name="SLSearchResult" value="53 Stat. 1" />
+
+		<property name="chapterNumber" value="525" />
+		<property name="chapterCongress" value="72 (1931-1933)" />
+		<property name="chapterSearchResult" value="271" />
+
+		<property name="voteNumber" value="87" />
+		<property name="voteReportCongress" value="113(2013-2014)" />
+		<property name="VRSearchResult" value="113" />
+
+		<property name="titleNumber" value="7" />
+		<property name="sectionNumber" value="1621" />
+		<property name="ucSearchResult" value="7 USCS § 1621" />
+	</test-data>
+	
+	<test-data class="GisMembersCommittes_DemographicsTest" method="demoGraphicsSearch">
+		<property name="keyword" value="test"/>
+		<property name="genderVal" value="Male"/>
+		<property name="firstSubTitle" value="Member Profile - John Test"/>
+		<property name="result" value="M"/>
+	</test-data>
+	
+	<test-data class="GisMembersCommittes_CommittessTest" method="committessSearch">
+		<property name="name" value="agriculture"/>
+		<property name="chanberVal" value="House Committee"/>
+	</test-data>
+	
+	<test-data class="GisRegulationsSearchTest" method="searchByKeyword">
+		<property name="searchTerms" value="test"/>
+		<property name="title" value="Safety Testing or Certification of Certain Workplace Equipment and Materials: Deletion of Specific Testing Laboratory Names; Definition of Nationally Recognized Testing Laboratory; Determination of Eligible Testing Organizations" />
+	</test-data>
+
+	
+	<test-data class="ProQuest_CR_DOCJpgviewerTest" method="ICI_ViewerDocJPG">
+	     <property name="caseId" value="CR08052"/>
+	     <property name="firefoxProfileName" value="gisProfile" />
+		<property name="basicSearchText" value="*"/>
+	</test-data>
+	
+	
+	<test-data class="ProQuest_CR_ViewerDocDownloadJP2" method="ICI_ViewerDocDownloadJP2">
+	     <property name="caseId" value="CR08051"/>
+		<property name="basicSearchText" value="*"/>
+	</test-data>
+	
+	<test-data class="ProQuest_CR_LoginThruInstitutionTest" method="LoginThruInstiution">
+	    <property name="caseId" value="CR0831"/>
+		<property name="reginSelect" value="United Kingdom (UK Access Management Federation for Education and Research)"/>
+		<property name="librarySelect" value="UK federation test IdP"/>
+		<property name="userName" value="craig"/>
+		<property name="password" value="passwordc"/>
+	</test-data>
+	
+	<test-data class="GisTurnawayTest" method="turnaway">
+	     <property name="caseId" value="C169024"/>
+		<property name="url2" value="http://test.congressional.proquest.com/congressional/docview/t29.d30.hrg-1978-hps-0005"/>
+	</test-data>
+	
+	<!-- GIS　ICI -->
+	<test-data class="ProQuest_ICI_BasicSearchTest" method="ICI_BasicSearch">
+	    <property name="caseId" value="ICI07252"/>
+		<property name="basicSearchText" value="test"/>
+	</test-data>
+	
+	<test-data class="ProQuest_ICI_LoginTest" method="LoginAuthentication">
+	    <property name="caseId" value="ICI07251"/>
+		<property name="basicSearchText" value="test"/>
+	</test-data>
+	
+	<test-data class="ProQuest_ICI_AdvancedSearchTest" method="ICI_AdvancedSearch">
+	    <property name="caseId" value="ICI07253"/>
+		<property name="firstFullTextDefaultText" value="All fields including full text"/>
+		<property name="limitByOptionDefaultText" value="All Available Dates" />
+		<property name="advancedSearchText" value="unemployment" />
+		<property name="startingWithText"  value="Starting with:"/>
+		<property name="firstStageText"  value="Aleut"/>
+		<property name="secondStageText"  value="Pribilof Aleuts"/>
+		<property name="findTermsText"  value="Pribilof Aleuts" />
+		<property name="select"  value="Docket number" />
+		<property name="contentTypeSearhcText" type="string-list">
+			<string value="ICC 205" />
+			<string value="snake indians" />
+			<string value="Schaghticoke" />
+			<string value="ICC-K_307-D_00001" />
+			<string value="Treaty with the Sioux of the Lakes. July 19, 1815" />
+			<string value="Order of Dismissal" />
+			<string value="Exhibits" />
+			<string value="Re: Petition of the Choctaw Nation" />
+			<string value="Relief Map Overlay" />
+			<string value="Journal of the Indian Claims Commission: January 1963" />
+			<string value="92 S. 3230" />
+			<string value="Corporate charter of Oneida tribe of Indians of Wisconsin of Oneida Reservation" />
+		</property>
+	</test-data>
+	
+	<test-data class="ProQuest_ICI_SearchByNumberTest" method="ICI_SearchByNumberTest">
+	    <property name="caseId" value="ICI07254"/>
+		<property name="coutCommision" value="Indian Claims Commission (ICC)"/>
+		<property name="docketNumber" value="34"/>
+		<property name="ICC_NO" value="ICC 34"/>
+		<property name="volume" value="43"/>
+		<property name="courtCommision" value="Indian Claims Commission (Ind. Cl. Comm.)"/>
+		<property name="pages" value="749"/>
+		<property name="EN_courtCommision" value="Indian Claims Commission (ICC)"/>
+		<property name="EN_docketNumber" value="34"/>
+		<property name="exhibitNumber" value="540"/>
+		<property name="map" value="113"/>
+		<property name="SL_volume" value="13"/>
+		<property name="SL_page" value="541"/>
+		<property name="chapterNumber" value="444"/>
+		<property name="chapterCongress" value="84 (1955-1956)"/>
+		<property name="pl" value="74 (1935-1936)"/>
+		<property name="law_number" value="538"/>
+	</test-data>
+	
+	<test-data class="ProQuest_ICI_SearchResultTest" method="ICI_SearchResult">
+	    <property name="caseId" value="ICI07261"/>
+		<property name="basicSearchText" value="test"/>
+		<property name="message"   value="This mail is sent by the system automatically, please don't reply it." />
+		<property name="emailSubject" value = "Your ProQuest Research" />
+	</test-data>
+	
+	<test-data class="ProQuest_ICI_DOCViewPageTest" method="ICI_DOCViewPage">
+	    <property name="caseId" value="ICI07262"/>
+		<property name="basicSearchText" value="test"/>
+		<property name="message"   value="This mail is sent by the system automatically, please don't reply it." />
+		<property name="emailSubject" value = "Your ProQuest Research" />
+	</test-data>
+	
+	<test-data class="ProQuest_ICI_SelectedItemsPageTest" method="ICI_SelectedItemsTest">
+		<property name="caseId" value="ICI07271"/>
+		<property name="basicSearchText" value="unemployment"/>
+		<property name="message"   value="This mail is sent by the system automatically, please don't reply it." />
+		<property name="emailSubject" value = "Your ProQuest Research" />
+	</test-data>
+	
+	<test-data class="ProQuest_ICIRecentSearchesPageTest" method="ICI_REcentSearchesPageTest">
+		<property name="caseId" value="ICI07272"/>
+		<property name="basicSearchText" value="unemployment"/>
+		<property name="basicSearchText2" value="test"/>
+		<property name="basicSearchText3" value="test1"/>
+	</test-data>
+	
+	<test-data class="ProQuest_ICIRelatedPrductsTest" method="relatedProductsTest">
+		<property name="caseId" value="ICI07282"/>
+	</test-data>
+	
+	<test-data class="ProQuest_ICIDurableURLTest" method="ICI_DurableUrlTest">
+		<property name="caseId" value="ICI07292"/>
+		<property name="url1" value="http://test.indianclaims.proquest.com/indianclaims/docview/t98.d78.ici-snoqualmie"/>
+	</test-data>
+	
+	<test-data class="ProQuest_ICI_BookMarksTest" method="ICI_BookMarksTest">
+		<property name="caseId" value="ICI07291"/>
+	</test-data>
+	
+	<test-data class="ProQuest_ICI_CommonScrennElementsTest" method="ICI_CommomScreenElementsTest">
+		<property name="caseId" value="ICI07281"/>
+		<property name="basicSearchText" value="test"/>
+		<property name="basicSearchText2" value="Computer"/>
+		<property name="message"   value="This mail is sent by the system automatically, please don't reply it." />
+		<property name="emailSubject" value = "Your ProQuest Research" />
+		<property name="firefoxProfileName" value = "gisProfile" />
+	</test-data>
+	
+	<test-data class="ProQuest_ICISearchNationTribeHistoriesSearchTest" method="ICI_SearchNationTribeHistoriesSearch">
+		<property name="caseId" value="ICI07293"/>
+		<property name="advancedSearchText" value="*"/>
+	</test-data>
+	
+	<test-data class="ProQuest_ICISearchStateTerritoryHistoriesSearchTest" method="ICI_SearchStateTerritoryHistoriesSearch">
+		<property name="caseId" value="ICI07294"/>
+		<property name="advancedSearchText" value="*"/>
+	</test-data>
+	
+
+	<test-data class="ProQuest_ICI_DOCJpgviewerTest" method="ICI_ViewerDocJPG">
+		<property name="caseId" value="ICI08041" />
+		<property name="basicSearchText" value="*" />
+	</test-data>
+
+	<test-data class="ProQuest_ICI_ViewerDocDownloadJP2" method="ICI_ViewerDocDownloadJP2">
+		<property name="caseId" value="ICI08042" />
+		<property name="basicSearchText" value="*" />
+	</test-data>
+	
+	<test-data class="ProQuest_ICI_LoginThruInstitutionTest" method="LoginThruInstiution">
+	    <property name="caseId" value="ICI08043"/>
+		<property name="reginSelect" value="United Kingdom (UK Access Management Federation for Education and Research)"/>
+		<property name="librarySelect" value="UK federation test IdP"/>
+		<property name="userName" value="craig"/>
+		<property name="password" value="passwordc"/>
+	</test-data>
+	
+	<!-- GIS HCPP -->
+	<test-data class="ProQuest_HCPP_LoginTest" method="HCPP_LoginTest" >
+		<property name="caseId" value="HCPP001" />
+		<property name="basicSearchText" value="test" />
+	</test-data>
+
+	<test-data class="ProQuest_HCPP_BasciSearchTest" method="HCPP_BasicSearchTest">
+		<property name="caseId" value="HCPP002" />
+		<property name="basicSearchText" value="employment" />
+		<property name="fullText" value="Enter keywords to search within all fields including full text" />
+	</test-data>
+
+	
+	<test-data class="ProQuest_HCPP_AdvancedSearchTest" method="HCPP_AdvancedSearchTest">
+		<property name="caseId" value="HCPP003" />
+		<property name="basicSearchText" value="employment" />
+		<property name="selected" value="Year is before..." />
+		<property name="date" value="2015" />
+	</test-data>
+
+	<test-data class="ProQuest_HCPP_SearchByNumberTest" method="HCPP_SearchByNumberTest">
+		<property name="caseId" value="HCPP004" />
+		<property name="session" value="any" />
+		<property name="billNumber" value="120" />
+	</test-data>
+
+	<test-data class="ProQuest_HCPP_MemberSearchTest" method="HCPP_MemberSearchTest">
+		<property name="caseId" value="HCPP005" />
+	</test-data>
+
+
+	<test-data class="ProQuest_HCPP_SearchResultsTest" method="HCPP_SearchResultsTest">
+		<property name="caseId" value="HCPP006" />
+		<property name="basicSearchText" value="test" />
+		<property name="advancedSearchText" value="test" />
+		<property name="basicSearch" value="computer" />
+		<property name="message"   value="This mail is sent by the system automatically, please don't reply it." />
+		<property name="emailSubject" value = "Your ProQuest Research" />
+	</test-data>
+
+
+	<test-data class="ProQuest_HCPP_DOCViewTest" method="HCPP_DOCViewTest">
+		<property name="caseId" value="HCPP007" />
+		<property name="basicSearchText" value="test" />
+		<property name="message"   value="This mail is sent by the system automatically, please don't reply it." />
+		<property name="emailSubject" value = "Your ProQuest Research" />
+	</test-data>
+
+	<test-data class="ProQuest_HCPP_CommonSearchElementsTest" method="HCPP_CommonSearchElements">
+		<property name="caseId" value="HCPP008" />
+		<property name="basicSearchText" value="test" />
+		<property name="basicSearchText2" value="Computer" />
+		<property name="message"   value="This mail is sent by the system automatically, please don't reply it." />
+		<property name="emailSubject" value = "Your ProQuest Research" />
+	</test-data>
+
+	<test-data class="ProQuest_HCPPRelatedPrductsTest" method="relatedProductsTest">
+		<property name="caseId" value="HCPP009" />
+	</test-data>
+
+	<test-data class="ProQuest_HCPP_BookMarksTest" method="BookMarksTest">
+		<property name="caseId" value="HCPP010" />
+	</test-data>
+
+	<test-data class="ProQuest_HCPPDurableURLTest" method="durableUrlTest">
+		<property name="caseId" value="HCPP011" />
+		<property name="url1" value="http://test.parlipapers.proquest.com/parlipapers/docview/t70.d75.hlsp-001112" />
+		<property name="url2" value="HTTP://parlipapers.proquest.com/parlipapers/docview/t70.d75.1937-035003" />
+		
+	</test-data>
+	
+	<test-data class="ProQuest_HCPP_MySearchTest" method="mySearchTest">
+	    <property name="firefoxProfileName" value = "gisProfile" />
+		<property name="caseId" value="HCPP012" />
+		<property name="searchText" value="test" />
+	</test-data>
+	
+	<test-data class="ProQuest_HCPP_CreateMyResearchAccountAndDeleteIt" method="HCPP_001CreateMyResearchAccount">
+		<property name="caseId" value="HCPP013" />
+		<property name="userName" value="test002" />
+		<property name="password" value="password321" />
+		<property name="retypePassword" value="password321" />
+		<property name="firstName" value="gis" />
+		<property name="lastName" value="auto" />
+		<property name="emailAddress" value="gis_autotest@outlook.com" />
+	</test-data>
+	
+	<test-data class="ProQuest_HCPP_LoginThruInstitutionTest" method="LoginThruInstiution">
+	    <property name="caseId" value="HCPP015"/>
+		<property name="reginSelect" value="United Kingdom (UK Access Management Federation for Education and Research)"/>
+		<property name="librarySelect" value="UK federation test IdP"/>
+		<property name="userName" value="craig"/>
+		<property name="password" value="passwordc"/>
+	</test-data>
+
+	<!--Regulatory Insight  -->
+	<test-data class="ProQuest_RI_LoginTest" method="RI_LoginTest">
+		<property name="caseId" value="RI001" />
+		<property name="searchText" value="test" />
+	</test-data>
+
+	<test-data class="ProQuest_RI_BasicSearchTest" method="RI_BasicSearch">
+		<property name="caseId" value="RI002" />
+		<property name="searchText" value="test" />
+		<property name="searchBox" value="Enter keywords or citations to search within all fields including full text" />
+		<property name="subjectStr" value="New to Regulatory Insight? Here are some useful starting places." />
+	</test-data>
+	
+	<test-data class="ProQuest_RI_AdvancedSearchTest" method="RI_AdvancedSearch">
+		<property name="caseId" value="RI003" />
+		<property name="searchText" value="unemployment" />
+		<property name="fullDefalueText" value="All fields including full text" />
+		<property name="fullDefalueText2" value="All fields including full text" />
+		<property name="and" value="AND" />
+		<property name="defauleDateselected" value="All Available Dates" />
+		<property name="terms" value="Department of Agriculture (USDA)" />
+		<property name="subTitle" value="Agricultural Marketing Service" />
+		
+	</test-data>
+		
+	<test-data class="ProQuest_RI_CheckAllContentTypesTest" method="RI_AdvancedSearchContentTypes">
+		<property name="caseId" value="RI004" />
+		<property name="searchText" value="unemployment" />
+		<property name="searchText1" value="Securities and Exchange Commission" />
+		<property name="dropDown1" value="Agency" />
+		<property name="searchText2" value="Federal employees" />
+		<property name="dropDown2" value="Subject" />
+	</test-data>
+	
+	<test-data class="ProQuest_RI_SearchByNumberTest" method="RI_SearchByNumber">
+		<property name="caseId" value="RI005" />
+		<property name="volume" value="79(2014)" />
+		<property name="publication" value="FR" />
+		<property name="pageNumber" value="1" />
+		<property name="defVolume" value="80(2015)" />
+		<property name="defPublication" value="FR" />
+		
+	</test-data>
+	
+	<test-data class="ProQuest_RI_SearchResultTest" method="RI_SearchResult">
+		<property name="caseId" value="RI006" />
+		<property name="searchText" value="test" />
+		<property name="email" value="ri_autotest@outlook.com" />
+		<property name="message"   value="This mail is sent by the system automatically, please don't reply it." />
+		<property name="emailSubject" value = "Your ProQuest Research" />
+		<property name="youName" value = "Auto Gis" />
+	
+	</test-data>
+	
+	<test-data class="ProQuest_RI_DocViewTest" method="RI_DocViewTest">
+		<property name="caseId" value="RI007" />
+		<property name="searchText" value="test" />
+		<property name="email" value="ri_autotest@outlook.com" />
+		<property name="message"   value="This mail is sent by the system automatically, please don't reply it." />
+		<property name="emailSubject" value = "Your ProQuest Research" />
+		<property name="youName" value = "Auto Gis" />
+		<property name="dateSelect" value = "Year is between..." />
+		<property name="firstYear" value = "1990" />
+		<property name="secondYear" value = "2015" />	
+	</test-data>
+	
+	<test-data class="ProQuest_RI_RelatedPrductsTest" method="relatedProductsTest">
+		<property name="caseId" value="RI009" />
+	</test-data>
+	
+	<test-data class="ProQuest_RI_DurableURLTest" method="durableUrlTest">
+		<property name="caseId" value="RI010" />
+		<property name="url1" value="http://test.regulatoryinsight.proquest.com/regulatoryinsight/docview/t41.d42.110_pl_408" />
+	</test-data>
+	
+	<test-data class="ProQuest_RI_CommonSearchElementsTest" method="RI_commonSearchElements">
+		<property name="caseId" value="RI008" />
+		<property name="searchText" value="test" />
+		<property name="searchText2" value="Computer"/>
+		<property name="email" value="ri_autotest@outlook.com" />
+		<property name="message"   value="This mail is sent by the system automatically, please don't reply it." />
+		<property name="emailSubject" value = "Your ProQuest Research" />
+		<property name="youName" value = "Auto Gis" />
+	</test-data>
+	
+	<test-data class="ProQuest_RI_LoginThruInstitutionTest" method="LoginThruInstiution">
+	    <property name="caseId" value="RI011"/>
+		<property name="reginSelect" value="United Kingdom (UK Access Management Federation for Education and Research)"/>
+		<property name="librarySelect" value="UK federation test IdP"/>
+		<property name="userName" value="craig"/>
+		<property name="password" value="passwordc"/>
+	</test-data>
+	
+		<!--History Vault  -->
+	<test-data class="ProQuest_HV_LoginTest" method="HV_LoginTest">
+		<property name="caseId" value="HV001" />
+		<property name="searchText" value="test" />
+	</test-data>
+	
+	<test-data class="ProQuest_HV_BasicSearchTest" method="HV_BasicSearchTest">
+		<property name="caseId" value="HV002" />
+		<property name="searchText" value="test" />
+		<property name="categoryName" value="International Relations and Military Conflicts" />
+		<property name="slaveryName" value="Slaves and Slavery" />
+		<property name="resultNum" value="7" />
+	</test-data>
+	
+	<test-data class="ProQuest_HV_AdvancedSearchTest" method="HV_AdvancedSearchTest">
+		<property name="caseId" value="HV003" />
+		<property name="searchText" value="U.S. citizens abroad" />
+		<property name="dropDef" value="All Fields Excluding Full Text" />
+		<property name="connectorDef" value="AND" />
+		<property name="tipText" value="Search Tip: A quoted search such as &quot;John Kennedy&quot; will only match the exact phrase and will not match John F. Kennedy or Kennedy, John. To find all variations of the name, it is best to omit the quotes for an implicit proximity search." />
+	    <property name="searchSelectText1" value="All Fields Excluding Full Text" />
+	    <property name="searchSelectText2" value="All Fields Including Full Text" />
+	    <property name="searchSelectText3" value="Person as Subject" />
+	    <property name="searchThe" value="the" />
+	    <property name="searchCase" value="cases" />
+	</test-data>
+	
+	<test-data class="ProQuest_HV_BrowseTest" method="HV_BreoseTest">
+		<property name="caseId" value="HV004" />
+		<property name="moduleTtile" type="string-list">
+			<string value="Civil Rights and the Black Freedom Struggle" />
+			<string value="Southern Life and Slavery" />
+			<string value="American Indians and the American West" />
+			<string value="American Politics and Society" />
+			<string value="International Relations and Military Conflicts" />
+			<string value="Women's Studies" />
+			<string value="Workers and Labor Unions" />
+		</property>
+		<property name="link" value="Black Freedom Struggle in the 20th Century: Federal Government Records" />
+	</test-data>
+	
+	<test-data class="ProQuest_HV_TimeLineTest" method="HV_TimeLineTest">
+		<property name="caseId" value="HV005" />
+		<property name="selectLineText" value="Black Power Movement" />
+	</test-data>
+	
+	<test-data class="ProQuest_HV_SearchResultsTest" method="HV_SearchResultsTest">
+		<property name="caseId" value="HV006" />
+		<property name="searchText" value="test" />
+		<property name="email" value="gis3_autotest@outlook.com" />
+		<property name="message"   value="This mail is sent by the system automatically, please don't reply it." />
+		<property name="emailSubject" value = "Your ProQuest Research" />
+		<property name="address" value = "gis_autotest@outlook.com" />
+		<property name="password" value = "password123" />
+	</test-data>
+	
+	<test-data class="ProQuest_HV_DocumentViewTest" method="HV_DocumentView">
+		<property name="caseId" value="HV007" />
+		<property name="searchText" value="test" />
+		<property name="userProfile" value="gis_autotest@outlook.com" />
+		<property name="emailAddress" value="gis3_autotest@outlook.com" />
+		<property name="password" value="password123" />
+		<property name="subject" value="HV Share Document" />
+		<property name="comment" value="This mail is sent by the system automatically, please don't reply it." />
+	</test-data>
+	
+	<test-data class="ProQuest_HV_CommonScreenElementsTest" method="HV_CommonScreenElementsTest">
+  		<property name="caseId" value="HV008" />
+  		<property name="wordTitle" value="Terms and Conditions" />
+ 	</test-data>
+	
+	<test-data class="ProQuest_HV_DurableURLTest" method="HV_DurableURLTest">
+		<property name="caseId" value="HV009" />
+		<property name="durableUrl" value="http://test.congressional.proquest.com/histvault?q=002423-023-0045" />
+	</test-data>
+	
+	<test-data class="ProQuest_HV_TurnawayTest" method="HV_TurnawayTest">
+		<property name="caseId" value="HV010" />
+		<property name="account1" value="PRD5JHRS" />
+		<property name="password1" value="Vw]Nk_]H6z" />
+		<property name="url2" value="http://test.congressional.proquest.com/historyvault?q=000579-005-0325" />
+		<property name="message" value="You do not have the rights to view this document. Please contact your administrator if you need assistance." />
+	</test-data>
+	
+	<test-data class="ProQuest_HV_RelatedProductsTest" method="HV_RelatedProductsTest">
+		<property name="caseId" value="HV011" />
+	</test-data>
+	
+	<test-data class="ProQuest_HV_SearchTermsTest" method="HV_SearchTermsTest">
+		<property name="caseId" value="HV012" />
+		<property name="searchTexts" type="string-list">
+			<string value="U.S. v. Mitchell" />
+			<string value="Brown v. Board of Education" />
+			<string value="General Education Board, Inc." />
+			<string value="Agency for International Development" />
+			<string value="Jones, Madison S., Jr." />
+			<string value="Bohlen, Charles E." />
+			<string value="General Motors Corp. (GM)" />
+			<string value="County Schools Districts in Mississippi" />
+		</property>
+	</test-data>
+	
+	<!--Legislative Insight  -->
+	<test-data class="ProQuest_LI_LoginAuthenticationTest" method="LI_LoginAuthenticationTest">
+		<property name="caseId" value="C136964" />
+		<property name="searchText" value="test" />
+	</test-data>
+	
+	<test-data class="ProQuest_LI_BasicSearchTest" method="LI_BasicSearchTest">
+		<property name="caseId" value="C136984" />
+		<property name="searchText" value="History" />
+		<property name="lawNumber" value="PL90-351" />
+	</test-data>
+	
+	<test-data class="ProQuest_LI_QuickSearchTest" method="LI_QuestSearchTest">
+		<property name="caseId" value="C136985" />
+		<property name="searchText" value="History" />
+	</test-data>
+	
+	<test-data class="ProQuest_LI_SearchResultsTest" method="LI_SearchResultsTest">
+		<property name="caseId" value="C232523" />
+		<property name="searchText" value="History" />
+		<property name="emailAddress" value="gis3_autotest@outlook.com" />
+		<property name="emailSubject" value="LI Share Document" />
+		<property name="comment" value="This mail is sent by the system automatically, please don't reply it." />
+	</test-data>
+	
+	<test-data class="ProQuest_LI_GuidedSearchTest" method="LI_GuidedSearchTest">
+		<property name="caseId" value="C136987" />
+		<property name="searchText" value="History" />
+		<property name="searchText1" value="the" />
+		<property name="searchText2" value="set" />
+		<property name="dropDef" value="All Fields excluding Full Text" />
+		<property name="connectorDef" value="AND" />
+		<property name="tipText" value="A quoted search such as &quot;John Kennedy&quot; will only match the exact phrase and will not match John F. Kennedy or Kennedy, John. To find all variations of the name, it is best to omit the quotes for an implicit proximity search." />
+	</test-data>
+	
+	<test-data class="ProQuest_LI_SearchByNumberTest" method="LI_SearchByNumberTest">
+		<property name="caseId" value="C136988" />
+		<property name="BillNumber" value="5037" />
+		<property name="PublicLawNumber" value="351" />
+	</test-data>
+	
+	<test-data class="ProQuest_LI_CommonSearchElementsTest" method="LI_CommonSearchElementsTest">
+		<property name="caseId" value="C136989" />
+		<property name="RelatedOption" type="string-list">
+			<string value="Congressional" />
+			<string value="Government Periodicals Index" />
+			<string value="History Vault" />
+			<string value="Indian Claims Insight" />
+			<string value="International Datasets" />
+			<string value="Regulatory Insight" />
+			<string value="Statistical Abstracts US" />
+			<string value="Statistical Abstracts World" />
+			<string value="Statistical Insight" />
+			<string value="U.K. Parliamentary Papers" />
+		</property>
+		<property name="wordTitle" value="Terms and Conditions" />
+	</test-data>
+	
+	<test-data class="ProQuest_LI_DocumentViewPageTest" method="LI_DocumentViewTest">
+		<property name="caseId" value="C136990" />
+		<property name="searchText" value="test" />
+		<property name="profileEmail" value="li_autotest@outlook.com" />
+		<property name="password" value="password123" />
+	</test-data>
+	
+	<test-data class="ProQuest_LI_DurableURLTest" method="LI_DurableURLTest">
+		<property name="caseId" value="C215875" />
+		<property name="url"    value="http://test.congressional.proquest.com/legisinsight?id=PL106-476&amp;type=LEG_HIST" />
+	</test-data>
+	
+	<test-data class="ProQuest_LI_TurnawayTest" method="LI_TurnawayTest">
+		<property name="caseId" value="C137000" />
+		<property name="account1" value="gisli" />
+		<property name="password1" value="Co!3f&lt;7W7u" />
+		<property name="url2" value="http://test.congressional.proquest.com/legisinsight?id=PL106-476&amp;type=LEG_HIST" />
+		<property name="message" value="You do not have the rights to view this document. Please contact your administrator if you need assistance." />
+	</test-data>
+	
+	<test-data class="ProQuest_LI_RelatedProductsTest" method="LI_RelatedProductsTest">
+		<property name="caseId" value="C136999" />
+		<property name="Congressional" value="Congressional" />
+		<property name="GPI" value="Government Periodicals Index" />
+		<property name="HistoryVault" value="History Vault" />
+		<property name="InternationalDatasets" value="International Datasets" />
+		<property name="StatisticalInsight" value="Statistical Insight" />
+	</test-data>
+	
+	<test-data class="dddd" method="RI_AdvancedSearch">
+		<property name="randomEventCodes" type="string-list">
+			<string value="Tracking" />
+			<string value="SubUpdate" />
+			<string value="Email" />
+		</property>
+	</test-data>
+	
+</test-data-set>

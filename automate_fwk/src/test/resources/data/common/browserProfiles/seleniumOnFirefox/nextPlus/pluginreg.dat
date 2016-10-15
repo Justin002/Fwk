@@ -1,0 +1,135 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version|0.17|$
+Arch|x86-msvc|$
+
+[PLUGINS]
+NPSWF32_17_0_0_169.dll|$
+C:\Windows\SysWOW64\Macromed\Flash\NPSWF32_17_0_0_169.dll|$
+17.0.0.169|$
+1429059381203|0|0|0|$
+Shockwave Flash 17.0 r0|$
+Shockwave Flash|$
+2
+0|application/x-shockwave-flash|Adobe Flash movie|swf|$
+1|application/futuresplash|FutureSplash movie|spl|$
+npSSOAxCtrlForPTLogin.dll|$
+C:\Program Files (x86)\Common Files\Tencent\TXSSO\1.2.3.15\Bin\npSSOAxCtrlForPTLogin.dll|$
+1.0.1.16|$
+1423818886000|0|0|0|$
+QQ QuickLogin Helper|$
+Tencent SSO Platform|$
+1
+0|application/nptxsso|TXSSO||$
+np360MMPlugIn.dll|$
+D:\Program Files (x86)\360Safe\mobilemgr\np360MMPlugIn.dll|$
+2.4.0.1115|$
+1419904852000|0|0|0|$
+360MMPlugin|$
+360MMPlugin|$
+1
+0|application/x360mmplugin|360MMPlugin.dll|dll|$
+npqqwebgame.dll|$
+C:\Users\Wendy\AppData\Roaming\Tencent\WebGamePlugin\1.0.3.2\npqqwebgame.dll|$
+1.0.3.2|$
+1417676756000|0|0|0|$
+QQWebGamePlugin Pro|$
+QQGamePlugin Pro|$
+1
+0|application/npqqwebgame|QQWebGamePlugin Pro|rts|$
+nppdf32.dll|$
+E:\Autotest\Tools\Reader\browser\nppdf32.dll|$
+11.0.10.32|$
+1417588280000|0|0|0|$
+Adobe PDF Plug-In For Firefox and Netscape 11.0.10|$
+Adobe Acrobat|$
+7
+0|application/pdf|Acrobat Portable Document Format|pdf|$
+1|application/vnd.adobe.pdfxml|Adobe PDF in XML Format|pdfxml|$
+2|application/vnd.adobe.x-mars|Adobe PDF in XML Format|mars|$
+3|application/vnd.fdf|Acrobat Forms Data Format|fdf|$
+4|application/vnd.adobe.xfdf|XML Version of Acrobat Forms Data Format|xfdf|$
+5|application/vnd.adobe.xdp+xml| Acrobat XML Data Package|xdp|$
+6|application/vnd.adobe.xfd+xml|Adobe FormFlow99 Data File|xfd|$
+nppdf32.dll|$
+E:\Autotest\Tools\Reader\AIR\nppdf32.dll|$
+11.0.10.32|$
+1417588280000|0|0|0|$
+Adobe PDF Plug-In For Firefox and Netscape 11.0.10|$
+Adobe Acrobat|$
+7
+0|application/pdf|Acrobat Portable Document Format|pdf|$
+1|application/vnd.adobe.pdfxml|Adobe PDF in XML Format|pdfxml|$
+2|application/vnd.adobe.x-mars|Adobe PDF in XML Format|mars|$
+3|application/vnd.fdf|Acrobat Forms Data Format|fdf|$
+4|application/vnd.adobe.xfdf|XML Version of Acrobat Forms Data Format|xfdf|$
+5|application/vnd.adobe.xdp+xml| Acrobat XML Data Package|xdp|$
+6|application/vnd.adobe.xfd+xml|Adobe FormFlow99 Data File|xfd|$
+npitunes.dll|$
+C:\Program Files (x86)\iTunes\Mozilla Plugins\npitunes.dll|$
+1.0.1.1|$
+1414645260000|0|0|0|$
+iTunes Detector Plug-in|$
+iTunes Application Detector|$
+1
+0|application/itunes-plugin|This plug-in detects the presence of iTunes when opening iTunes Store URLs in a web page with Firefox.||$
+npQzoneMusic.dll|$
+C:\Program Files (x86)\Tencent\QzoneMusic\npQzoneMusic.dll|$
+9.51.3079.830|$
+1409378120000|0|0|0|$
+QQMusic|$
+QQMusic|$
+1
+0|application/tecent-qzonemusic-plugin|This plug-in is transfers of QzoneMusic when opening Qzone in a web page with Firefox.|rts|$
+npaxlogin.dll|$
+D:\Program Files (x86)\360Safe\Utils\npaxlogin.dll|$
+1.0.0.1007|$
+1398162484000|0|0|0|$
+360安全卫士 快速登录|$
+360安全卫士 快速登录|$
+1
+0|application/mozilla-npqihooquicklogin|||$
+npQQPhotoDrawEx.dll|$
+C:\Program Files (x86)\Tencent\Qzone\npQQPhotoDrawEx.dll|$
+2.47.312.813|$
+1376385610000|0|0|0|$
+npQQPhotoDrawEx Module|$
+npQQPhotoDrawEx|$
+1
+0|application/tencent-qqphotodrawex2-plugin||rts|$
+npQQMailWebKit.dll|$
+C:\Program Files (x86)\QQMailPlugin\npQQMailWebKit.dll|$
+1.0.0.22|$
+1366877940000|0|0|0|$
+QQMail plugin for WebKit #1.0.0.22|$
+QQMail Plugin|$
+2
+0|application/x-tencent-qmail-webkit|QQMailPlugin for webkit||$
+1|application/x-tencent-qmail|QQMailPlugin for webkit||$
+nptxftnWebKit.dll|$
+C:\Program Files (x86)\QQMailPlugin\nptxftnWebKit.dll|$
+1.0.0.4|$
+1365408134000|0|0|0|$
+Tencent FTN plug-in|$
+Tencent FTN plug-in|$
+1
+0|application/txftn-webkit|nptxftn||$
+NPSPWRAP.DLL|$
+C:\PROGRA~2\MICROS~1\Office14\NPSPWRAP.DLL|$
+14.0.4761.1000|$
+1269433358000|0|0|0|$
+The plug-in allows you to open and edit files using Microsoft Office applications|$
+Microsoft Office 2010|$
+1
+0|application/x-sharepoint|SharePoint Plug-in for Firefox||$
+NPAUTHZ.DLL|$
+C:\PROGRA~2\MICROS~1\Office14\NPAUTHZ.DLL|$
+14.0.4730.1010|$
+1263044538000|0|0|0|$
+Office Authorization plug-in for NPAPI browsers|$
+Microsoft Office 2010|$
+1
+0|application/x-msoffice14|14.0.4730.1010|*|$
+
+[INVALID]

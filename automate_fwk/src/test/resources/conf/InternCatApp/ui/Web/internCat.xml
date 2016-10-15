@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+	<UiMap>
+		<application>
+			<DefaultPage>首页</DefaultPage>
+				<AppName>实习猫</AppName>
+				<Version>1.3.9</Version>
+				<Environment>QA</Environment>
+				<TestCategory>Web</TestCategory>
+				<NetWork>Wifi</NetWork>
+				<Description>The Saved 实习猫  all page formation for android</Description>
+		</application>
+		
+		<pages>
+		    
+		  	<page name="首页" defaultView="首页" description = "实习猫首页">
+		  	    <view name="首页" areas="[首页]" />
+				<areas>
+					<首页 description="首页">
+						<element name="logo"   type="xpath" value="//*[@class='logo']" />
+						<element name="首页"    type="xpath" value="(//*[@class='lanren']//a)[1]" />
+						<element name="关于我们" type="xpath" value="(//*[@class='lanren']//a)[2]" />
+						<element name="联系我们" type="xpath" value="(//*[@class='lanren']//a)[3]" />
+						<element name="登录"    type="xpath" value="(//*[@class='lanren']//a)[4]" />
+					</首页>
+				</areas>
+		  	</page>
+		</pages>
+		</UiMap>
+		</test-data>

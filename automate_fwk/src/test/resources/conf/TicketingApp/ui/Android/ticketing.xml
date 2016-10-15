@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+	<UiMap>
+		<application>
+			<DefaultPage>navigation</DefaultPage>
+				<AppName>直達車</AppName>
+				<Version>1.3.9</Version>
+				<Environment>QA</Environment>
+				<TestCategory>Android</TestCategory>
+				<NetWork>Wifi</NetWork>
+				<Description>The Saved 直達車  all page formation for android</Description>
+		</application>
+		<pages>
+		  	<page name="navigation" defaultView="default" description = "app 引導頁面">
+		  	    <view name="default" areas="[default]" />
+				<areas>
+					<default description="navigation">
+						<element name="start" type="name" value="开启直达车"  view="homePage:home" />
+					</default>
+				</areas>
+		  	</page>
+		    <!-- 導航頁面 -->
+			<page name="homePage" defaultView="home" description = "The App start default page" >
+				<view name="home" areas="[head ,content]"/>
+				<areas>
+					<head description="頭部">
+						<element name="login"   type="name"      value="登录" />
+						<element name="car"     type="name"      value="汽车" />
+						<element name="Eticket" type="name"      value="电子票" />
+					</head>
+				
+					<content description="內容">
+						<element name="ConductingheQuery"   type="name"      value="站站查询" />
+						<element name="stationSearch"       type="name"      value="车站查询" />
+						<element name="search"              type="name"      value="查  询" />
+					</content>
+				</areas>
+			</page>
+			
+		</pages>
+		</UiMap>
+		</test-data>

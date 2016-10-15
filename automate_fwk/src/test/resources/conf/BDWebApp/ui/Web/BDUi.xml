@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+		<UiMap>
+		    <application>
+				<DefaultPage>BDPage</DefaultPage>
+				<AppName>百度</AppName>
+				<Version>1.2.12</Version>
+				<Environment>QA</Environment>
+				<TestCategory>Web</TestCategory>
+				<NetWork>Local Connection</NetWork>
+				<Description>The Saved 百度  all page formation for android</Description>
+			</application>
+			<pages>
+				<!-- start a app , default page  -->
+				<page name="BDPage" defaultView="BDPage" description = "選擇分享三方應用" >
+					<view name="BDPage" areas="[baidu]" />
+					<areas>
+						<baidu description="百度主页">
+							<element name="bdlog"         type="css"      value="#lg>img" />
+							<element name="bdSearchBox"   type="id"       value="kw" />
+							<element name="bdSearchBtn"   type="id"       value="su" />
+							<element name="allResult"     type="css"      value="#content_left div>h3>a>em" />
+						</baidu>
+					 </areas>
+				 </page>
+		 </pages>
+	</UiMap>
+</test-data>

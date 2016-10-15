@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Demo" duration-ms="23605" started-at="2016-10-15T15:51:49Z" finished-at="2016-10-15T15:52:13Z">
+    <groups>
+    </groups>
+    <test name="Demo WebApp" duration-ms="23605" started-at="2016-10-15T15:51:49Z" finished-at="2016-10-15T15:52:13Z">
+      <class name="com.by.automate.tests.ep2p.android.Test_FCDemo">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.by.automate.tests.ep2p.android.Test_FCDemo@56ac3a89]" name="setUp" is-config="true" duration-ms="8222" started-at="2016-10-15T23:51:49Z" finished-at="2016-10-15T23:51:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Test010VerifyHomePage()[pri:0, instance:com.by.automate.tests.ep2p.android.Test_FCDemo@56ac3a89]" name="Test010VerifyHomePage" duration-ms="2595" started-at="2016-10-15T23:51:57Z" finished-at="2016-10-15T23:52:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test010VerifyHomePage -->
+        <test-method status="PASS" signature="Test020GotoFaxian()[pri:0, instance:com.by.automate.tests.ep2p.android.Test_FCDemo@56ac3a89]" name="Test020GotoFaxian" duration-ms="2849" started-at="2016-10-15T23:52:02Z" finished-at="2016-10-15T23:52:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test020GotoFaxian -->
+        <test-method status="PASS" signature="Test030GotoWode()[pri:0, instance:com.by.automate.tests.ep2p.android.Test_FCDemo@56ac3a89]" name="Test030GotoWode" duration-ms="3129" started-at="2016-10-15T23:52:07Z" finished-at="2016-10-15T23:52:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test030GotoWode -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.by.automate.tests.ep2p.android.Test_FCDemo@56ac3a89]" name="tearDown" is-config="true" duration-ms="821" started-at="2016-10-15T23:52:12Z" finished-at="2016-10-15T23:52:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.by.automate.tests.ep2p.android.Test_FCDemo -->
+    </test> <!-- Demo WebApp -->
+  </suite> <!-- Demo -->
+</testng-results>

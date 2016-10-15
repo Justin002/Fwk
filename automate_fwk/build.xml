@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="automate_fwk" >
+  
+ <property name="project.name" value="automate_fwk"/>
+   <!-- Out-of-the-box those parameters are optional -->
+  
+   <property name="sonar.jdbc.url"
+        value="jdbc:mysql://localhost:3306/sonar?useUnicode=true&amp;characterEncoding=utf8" />
+   <property name="sonar.jdbc.driverClassName" value="com.mysql.jdbc.Driver" />
+   <property name="sonar.jdbc.username" value="root" />
+   <property name="sonar.jdbc.password" value="root" />
+
+ 
+   <!-- Define the Sonar task if this hasn't been done in a common script -->
+   <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+     <classpath>
+       <pathelement location="D:/Sonar/sonar-ant-task-2.1.jar/sonar-ant-task-2.1.jar"/>
+     </classpath>
+   </taskdef>
+  
+   <!-- Add the target -->
+   <target name="sonar">
+     <!-- list of mandatories Sonar properties -->
+     <property name="sonar.sources" value="${src.dir}" />
+	 <property name="sonar.projectKey" value="org.example:${project.name}" />
+
+     <!-- list of optional Sonar properties -->
+    <!--
+     <property key="sonar.projectName" value="this value overrides the name defined in Ant root node" />
+     <property key="sonar.binaries" value="list of directories which contain for example the Java bytecode" />
+     <property key="sonar.tests" value="list of test source directories separated by a comma" />
+     <property key="sonar.libraries" value="list of paths to libraries separated by a comma (These libraries are for example used by the Sonar Findbugs plugin)" />
+    -->
+  
+     <sonar:sonar key="${sonar.projectKey}" version="0.9" xmlns:sonar="antlib:org.sonar.ant"/>
+
+    </target>
+</project>

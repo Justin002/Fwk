@@ -1,0 +1,7 @@
+com\by\automate\fwk\ThreeWebApp.class
+com\by\automate\tests\sample\web\Test_FCVerifyCustomReprotOnBD.class
+com\by\automate\fwk\BDWebApp.class
+com\by\automate\fwk\NP_Android$MonitoringAds.class
+com\by\automate\tests\sample\android\Test_FCVerifyNextPlusFirstPage.class
+com\by\automate\fwk\NP_Android.class
+com\by\automate\tests\sample\web\Test_FCVerifyCustomReprotOnBD2.class

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<test-data>
+	<UiMap>
+		<application>
+			<DefaultPage>navigation</DefaultPage>
+				<AppName>实习猫</AppName>
+				<Version>1.3.9</Version>
+				<Environment>QA</Environment>
+				<TestCategory>Android</TestCategory>
+				<NetWork>Wifi</NetWork>
+				<Description>The Saved 直達車  all page formation for android</Description>
+		</application>
+		
+		<pages>
+		    
+		  	<page name="navigation" defaultView="default" description = "app 引導頁面">
+		  	    <view name="default" areas="[default]" />
+				<areas>
+					<default description="navigation">
+						<element name="开始体验" type="id" value="com.beyondsoft.interncat:id/image_bt"  view="登录页面:登录" />
+					</default>
+				</areas>
+		  	</page>
+		    <!-- 登录頁面 -->
+			<page name="登录页面" defaultView="登录" description = "实习猫登录页面" >
+				<view name="登录" areas="[登录]"/>
+				<areas>
+					<登录 description="登录页面">
+					    <element name="实习猫图标" type="id"  value="com.beyondsoft.interncat:id/iv" />
+						<element name="手机号码"    type="id"      value="com.beyondsoft.interncat:id/et_phone" />
+						<element name="密码"      type="id"      value="com.beyondsoft.interncat:id/et_pwd" />
+						<element name="登录"      type="id"      value="com.beyondsoft.interncat:id/tv_login"  view="机会页面:机会"/>
+					</登录>
+				</areas>
+			</page>
+			
+			<page name="机会页面" defaultView="chance" description = "机会页面" >
+				<view name="机会"      areas="[机会头部,机会内容,实习猫底部]"/>
+				<view name="位置详细页面" areas="[详细信息]"/>
+				<view name="搜索"      areas="[搜搜信息页面]" />
+				<view name="意向"      areas="[意向,实习领域,实习地点,期望薪资]" />
+				<areas>
+					<机会头部 description="头部">
+						<element name="意向"      type="id"      value="com.beyondsoft.interncat:id/chance_top_text" />
+						<element name="机会"      type="id"      value="com.beyondsoft.interncat:id/chance_top_title" />
+						<element name="搜索"      type="id"      value="com.beyondsoft.interncat:id/chance_top_seek_button" view="机会页面:搜索"/>
+					</机会头部>
+					
+					<机会内容 description="所有职位显示">
+					    <element name="所有职位图片"     type="id"   value="com.beyondsoft.interncat:id/company_logo_thumbnail_image" />
+					    <element name="所有职位发布日期"  type="id"    value="com.beyondsoft.interncat:id/day_tex" />
+					    <element name="所有职位详细信息"  type="id"  value="com.beyondsoft.interncat:id/chance_top_layout" />
+					</机会内容>
+					
+					
+					
+					<详细信息 description="工作详细信息介绍">
+					    <element name="招聘岗位" type="id" value="com.beyondsoft.interncat:id/post_title_text" />
+					    <element name="薪资范围" type="id" value="com.beyondsoft.interncat:id/post_money_text" />
+					    <element name="学历"    type="id" value="com.beyondsoft.interncat:id/post_education_text" />
+					    <element name="工作地址" type="id" value="com.beyondsoft.interncat:id/post_address_text" />
+					    <element name="浏览数"  type="id" value="com.beyondsoft.interncat:id/post_people_text" />
+					    <element name="职位"   type="name" value="产品经理方向" />
+					    <element name="简历限投" type="id" value="com.beyondsoft.interncat:id/progress_bar_layout" />
+					    <element name="岗位描述" type="id" value="com.beyondsoft.interncat:id/post_description" />
+					    <element name="任职描述" type="id" value="com.beyondsoft.interncat:id/post_position" />
+					    <element name="招聘公司" type="id" value="com.beyondsoft.interncat:id/post_company_information" />
+					    <element name="分享"    type="id" value="com.beyondsoft.interncat:id/share_button" />
+					    <element name="投递"    type="id" value="com.beyondsoft.interncat:id/send_resume_button" />
+					    <element name="返回"    type="id" value="com.beyondsoft.interncat:id/back_btn" />
+					</详细信息>
+					
+					<搜搜信息页面 description="搜索职位">
+					    <element name="职位搜索"            type="id"  value="com.beyondsoft.interncat:id/seek_job_title" />
+					    <element name="搜索文本框"           type="id"  value="com.beyondsoft.interncat:id/job_seek_edit" />
+					    <element name="选择城市"            type="id"  value="com.beyondsoft.interncat:id/please_text" />
+					    <element name="搜索按钮"            type="id"  value="com.beyondsoft.interncat:id/job_seek_button" />
+					    <element name="历史搜索"            type="name"  value="历史搜索" />
+					    <element name="武汉市"             type="name"  value="武汉市" />
+					    <element name="从搜索页返回机会页面"    type="id" value="com.beyondsoft.interncat:id/back_btn"   view="机会页面:机会" />
+					</搜搜信息页面>
+					
+					<意向 description="期望职位筛选条件">
+					    <element name="头像"       type="id"    value="com.beyondsoft.interncat:id/internship_image"/>
+						<element name="实现领域"    type="id"    value="com.beyondsoft.interncat:id/internship_areas_text" />
+						<element name="实习地点"    type="id"    value="com.beyondsoft.interncat:id/internship_place_text" />
+						<element name="期望薪资"    type="id"    value="com.beyondsoft.interncat:id/internship_money_text" />
+						<element name="实习领域值"   type="xpath" value="(//android.widget.TextView)[2]" />
+						<element name="实习地点值"   type="xpath" value="(//android.widget.TextView)[4]" />
+						<element name="期望薪资值"   type="xpath" value="(//android.widget.TextView)[6]" />
+					</意向>
+					
+					<实现领域 description="实现领域">
+					    <element name="实习意向返回按钮"   type="id"  value="com.beyondsoft.interncat:id/left_btn" />
+						<element name="实习意向"        type="id"  value="com.beyondsoft.interncat:id/post_details_title_text" />
+						<element name="实习意向保存按钮"   type="id"  value="com.beyondsoft.interncat:id/post_details_title_right_button_image" />
+						<element name="所有工作领域"      type="id"  value="com.beyondsoft.interncat:id/practice_check" />
+					</实现领域>
+					
+					<实习地点 description="实习地点">
+					    
+					</实习地点>
+					
+					<期望薪资 description="期望薪资">
+					    
+					</期望薪资>
+				</areas>
+			</page>
+			
+			 <!-- 活动页面 -->
+			<page name="活动页面" defaultView="活动" description = "实习猫活动页面" >
+				<view name="活动" areas="[活动]"/>
+				<areas>
+					<活动 description="活动页面">
+						<element name="活动图片"    type="id"      value="com.beyondsoft.interncat:id/activity_img_tv" />
+						<element name="全部"      type="id"      value="com.beyondsoft.interncat:id/activity_title_cb" />
+						<element name="同城"      type="id"      value="com.beyondsoft.interncat:id/activity_city_tv" />
+						<element name="同校"      type="id"      value="com.beyondsoft.interncat:id/activity_school_tv" />
+					</活动>
+				</areas>
+			</page>
+			
+			 <!-- 秀秀页面 -->
+			<page name="秀秀页面" defaultView="秀秀" description = "实习猫秀秀页面" >
+				<view name="秀秀" areas="[秀秀]"/>
+				<areas>
+					<秀秀 description="秀秀页面">
+						<element name="添加"    type="id"      value="com.beyondsoft.interncat:id/publish_show_iv" />
+						<element name="全部"      type="id"      value="com.beyondsoft.interncat:id/activity_title_cb" />
+						<element name="同城"      type="id"      value="com.beyondsoft.interncat:id/activity_city_tv" />
+						<element name="同校"      type="id"      value="com.beyondsoft.interncat:id/activity_school_tv" />
+					</秀秀>
+				</areas>
+			</page>
+			
+			<commonAreas description="实习猫相同区域">
+		    <实习猫底部  description="底部">
+				 <element name="底部机会"   type="id"   value="com.beyondsoft.interncat:id/chance_tab_button"    view="机会页面:机会"/>
+				 <element name="底部活动"   type="id"   value="com.beyondsoft.interncat:id/event_tab_button"     view="活动页面:活动" />
+				 <element name="底部秀秀"   type="id"   value="com.beyondsoft.interncat:id/beautiful_tab_button" view="秀秀页面:秀秀" />
+				 <element name="底部我的"   type="id"   value="com.beyondsoft.interncat:id/my_tab_button"        view="我的页面:我的" />
+			</实习猫底部>
+		</commonAreas>
+			
+		</pages>
+		</UiMap>
+		</test-data>
